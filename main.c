@@ -53,14 +53,18 @@ int main(){
     
     srand(time(NULL));
     
-    const int N = 9;
+    const int N = 60;
     
     int arr[N];
     
+    printf("Before: ");
     for(int i = 0; i < N; ++i){
         
         arr[i] = rand() % 10;
+        
+        printf("%d", arr[i]);
     }
+    printf("\nAfter:  ");
     
     QuickSort(0, N - 1, arr);
     
